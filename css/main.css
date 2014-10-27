@@ -8,13 +8,16 @@
 	
 */
 
+
+/* General Page Styling */
+
 * {
 	box-sizing: border-box;
 	
 }
 body.layout.event.list {
 
-	font-family: "bell gothic std";
+	font-family: "letter gothic std";
 	height: 1000px;
 		
 	
@@ -23,7 +26,7 @@ body.layout.event.list {
 	
 	background-color: transparent;
 	padding-left: 200px;
-	padding-top: 100px;
+	padding-top: 50px;
 	width: 750px;
 	
 	
@@ -51,6 +54,18 @@ h6, {
 	
 }
 
+
+
+
+
+/* General Page Styling */
+
+
+
+
+/* TOP  menu news archive about contact login */
+
+
 .menu,
 .menu .item {
 	
@@ -58,31 +73,166 @@ h6, {
 	margin: 0;
 	list-style: none;
 	
+	
 }
 .menu .item {
 	display: inline-block;
 }
 
 .menu.center {
+
 	
 }
+
+nav.utility.menus
+ul.menu {
+	
+	background-color: rgba(255,255,255,1);
+	position: fixed;
+	text-align: center;
+	border: 1px solid gray;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	width: 100%;
+	height: 10%;
+	top: 0px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	overflow: hidden;
+	
+	
+}
+
+
+nav.utility.menus
+ul.menu
+li {
+	
+	padding-left:5px; 
+	padding-right:5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+		
+	
+}
+
+
+.masthead
+.utility.menus
+a {
+	
+	text-decoration: none;
+	color: gray;
+	text-transform: uppercase;
+	/* background-color: pink; */
+	
+}
+
+.masthead
+.social.menus
+a {
+	
+	text-decoration: none;
+	color: #7f7f7f;
+	
+}
+
+
+.masthead
+.navigation.menus
+ul
+li
+a {
+	
+	text-decoration: none;
+	color: grey;
+
+	}
+
+
+
+.masthead,
+.brand 
+a
+	{
+	
+	text-decoration: none;
+	color: #3d3d3d;
+	
+}
+
+
+/* unvisited link */
+.masthead
+.utility.menus
+a:link {
+   
+}
+
+/* visited link */
+.masthead
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+.masthead
+.utility.menus
+a:hover {
+    color: #ff0092;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.masthead
+.utility.menus
+li:hover  {
+	
+	background-color: #e9e9e9;
+}
+
+/* selected link */
+.masthead
+.utility.menus
+a:active {
+    color: #0000FF;
+}			
+
+
+
+/* top menu news archive about contact login END END END */
+
+
+
+/* left hand navigation events blog current work profiles opportunities */
 
 .masthead {
 	
 	padding: 12px 0;
 	color: white;
 	height: 100%;
-	width: 160px;
+	width: 220px;
 	position: fixed;
 	top: 0;
-	left: 40px;
+	left: 25px;
+	text-align: center;
+	/* background-color: pink; */
 
 	
 }
 
+
+
+/* logo logo logo logo */
+
+
+
+
 .brand {
 	background-color: transparent;
-	height: 160px;
+	height: 130px;
 	width: 160px;
 	font-size: 48px;
 	width: 160px;
@@ -97,12 +247,19 @@ h6, {
 
 }
 
+/* left nagivagtion highest */
+
+
+
 nav
 ul.menu.level-1 {
 	
 	background-color: transparent;
 	text-align: center;
 	color: gray;
+	
+	
+	
 	
 }
 
@@ -112,53 +269,20 @@ li {
 	
 	background: white;
 	display: block;
-	width: 160px;
+	width: 180px;
 	padding: 5px;
-	margin-top: 5px;
 	text-transform: uppercase;
-	font-size: 12px;
 	z-index: 9999;
+	font-size: 16px;
 	
 }
 
-nav
-.utility.menus {
+/* left nagivagtion highest END */
 
-	z-index: 50;
-	
+/* navigation below the search bar LEFT side */
 
-	
-}
 
-nav.utility.menus
-ul.menu {
-	
-	background-color: white;
-	position: fixed;
-	text-align: center;
-	border: 1px solid gray;
-	border-right: none;
-	border-left: none;
-	border-top: none;
-	width: 100%;
-	top: 0px;
-	left: 0;
-	right: 0;
-	padding: 15px;
-	z-index: 9999;
-	
-	
-}
 
-nav.utility.menus
-ul.menu
-li {
-	
-	padding-left:5px; 
-	padding-right:5px; 
-	
-	
-}
 
 
 nav.social.menus
@@ -169,8 +293,12 @@ ul.menu
 	display: block;
 	width: 160px;
 	text-align: center;
+	/* background-color: pink; */
 	
 }
+
+/* social media buttons below the search bar LEFT side */
+
 
 
 nav.social.menus
@@ -179,54 +307,15 @@ li {
 	
 	background: white;
 	display: block;
-	padding: 5px;
-	margin-top: 5px;
+	padding: 0px;
+	margin-top: 0px;
 	font-size: 12px;
 	text-transform: uppercase;
 	font-size: 12px;
+	background-color: pink;
 	
 }
 
-
-
-
-.masthead
-.utility.menus
-a {
-	
-	text-decoration: none;
-	color: gray;
-	text-transform: uppercase;
-}
-
-.masthead
-.social.menus
-a {
-	
-	text-decoration: none;
-	color: grey;
-}
-
-
-.masthead
-.navigation.menus
-ul
-li
-a {
-	
-	text-decoration: none;
-	color: grey;
-}
-
-.masthead,
-.brand 
-a
-	{
-	
-	text-decoration: none;
-	color: grey;
-	
-}
 
 
 
@@ -242,27 +331,66 @@ a
 
 .masthead {
 	margin-bottom: 15px;
-	
+	font-weight: bold;
 }
 
-																			/* FORM SEARCH BAR START*/
+
+/* FORM SEARCH BAR START*/
+nav.utility.menus
+form
+.field {
+	
+	/* background: pink; */
+	
+
+}
+
 																			
 input#masthead-search {
-	
-	width: 160px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	border: 2px solid grey;
+	width: 130px;
+	float: left;
 	font-size: 12px;
 	padding: 5px;
 	text-align: left;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 1px;
 	color: gray;
+	
+	
+	
+	
+}
+form.form {
+	
+	width: 220px;
+}
+nav.utility.menus 
+form.form,
+input#masthead-search,
+button.control {
+	 
+	display: inline-block;
+	
+	
+	
+}
+form.form,
+button.control
+ {
+	display: inline-block;
+	color: gray;
+	text-transform: uppercase;
+	padding-top: 1px;
 	
 }
 
 
+/* bottom content that was moved to the RIght side */
+
 .sub {
+
+
 	padding: 12px 0;
 	color: white;
 	background-color: transparent;
@@ -276,7 +404,7 @@ input#masthead-search {
 	padding-top: 100px;
 	z-index: 15;
 	
-	
+		
 }
 .sub
 .calendar.segment {
@@ -286,12 +414,53 @@ input#masthead-search {
 }
 
 
+.sub
+.subscribe.segment
+h2 {
+	
+	/* background: pink; */
+	background-image: url("maillogo.gif");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 150px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	color: gray;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-top: 100px;
+}
+
+/* middle content main content */
+
+
+
+
+
 h1.page.heading
  {
 	
 	text-align: center;
 	text-transform: uppercase;
+	background-color: transparent;
+	border: transparent;
+	background-image: url("eventslogo.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	
 		
+}
+
+.items.events.ui
+img {
+	
+	border: 4px solid #FF7BAC;
+	
 }
 
 
@@ -328,7 +497,79 @@ a:active {
 	
 
 																			
-																			/* FORM SEARCH BAR FINISH*/
+/* FORM SEARCH BAR FINISH*/
+
+
+/* footer */
+
+footer.footer {
+	
+	background-color: rgba(61,61,61,0.5);
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	border-top: 1px solid black;
+	left: 0;
+	bottom: 0;
+	padding-left: 50px;
+	
+	
+}
+
+nav.departments.menus
+ul {
+	
+	/* background-color: green; */
+	font-size: 15px;
+	text-transform: uppercase;
+	
+}
+
+nav.departments.menus
+ul
+li {
+	
+	padding: 5px;
+	
+	
+}
+
+
+/* unvisited link */
+nav.departments.menus
+a:link {
+   color: white;
+}
+
+/* visited link */
+nav.departments.menus
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+nav.departments.menus
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+nav.departments.menus
+a:active {
+    color: #0000FF;
+}			
+
+footer
+p.legal {
+	background-color: transparent;
+	margin-top: 0;
+	right: 0;
+	position: absolute;
+}
+
+
+
+/* footer end */
 																	
 																			
 																			
