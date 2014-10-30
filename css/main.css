@@ -106,7 +106,7 @@ ul.menu {
 	border-left: none;
 	border-top: none;
 	width: 100%;
-	height: 10%;
+	height: auto;
 	top: 0px;
 	left: 0;
 	right: 0;
@@ -159,28 +159,23 @@ a {
 	
 	text-decoration: none;
 	color: grey;
+	
 
 	}
 
 
 
-.masthead,
-.brand 
-a
-	{
-	
-	text-decoration: none;
-	color: #3d3d3d;
-	
-}
+/* LINK STYLING FOR TOP NAVIGATIONLINK STYLING FOR TOP NAVIGATIONLINK STYLING FOR TOP NAVIGATIONLINK STYLING FOR TOP NAVIGATION */
+
 
 
 /* unvisited link */
 .masthead
 .utility.menus
 a:link {
-   
-}
+   /* background-color: pink; */
+   color: gray;
+   }
 
 /* visited link */
 .masthead
@@ -192,7 +187,7 @@ a:visited {
 .masthead
 .utility.menus
 a:hover {
-    color: #FF7BAC;
+    color: #FF0070;
     font-weight: bold;
     font-style: oblique;
 }
@@ -211,7 +206,7 @@ a:active {
     color: #0000FF;
 }			
 
-
+/* LINK STYLING FOR TOP NAVIGATIONLINK STYLING FOR TOP NAVIGATIONLINK STYLING FOR TOP NAVIGATION */
 
 /* top menu news archive about contact login END END END */
 
@@ -258,6 +253,11 @@ body
 	
 
 }
+.masthead {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
 
 /* left nagivagtion highest */
 
@@ -317,7 +317,7 @@ nav.social.menus
 ul.menu
 li {
 	
-	display: block;
+	display: inline-block;
 	padding: 0px;
 	margin-top: 0px;
 	font-size: 12px;
@@ -347,11 +347,6 @@ li {
 }
 
 
-.masthead {
-	margin-bottom: 15px;
-	font-weight: bold;
-}
-
 
 /* FORM SEARCH BAR START*/
 nav.utility.menus
@@ -379,10 +374,20 @@ input#masthead-search {
 	
 	
 }
+
+
+
+
+
 form.form {
 	
 	width: 220px;
 }
+
+
+
+
+
 nav.utility.menus 
 form.form,
 input#masthead-search,
@@ -458,18 +463,18 @@ h2 {
 }
 
 
-/* calendar */
+/* CALENDAR WILL COME BACK TO THIS  */
 
 .sub
 .calendar.segment {
 	width: 120px;
 	background-color: pink;
-	display: none;
+	
 	
 
 }
 
-sub
+
 .calendar.segment,
 table.mini.cal.ui {
 	
@@ -478,20 +483,39 @@ table.mini.cal.ui {
 	bottom: 0;
 	z-index: 100;
 	
-	
-	
-	
+
 }
 
-sub
-.calendar.segment,
+.mini.cal.ui .events.day {
+	position: relative;
+	z-index: 1;
+}
+
+.mini.cal.ui .link.day {
+	display: block;
+}
+
+/*
+.mini.cal.ui .link.day:hover + .event.link {
+	display: block;
+}
+*/
+
+
+.mini.cal.ui .event.link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	background: pink;
+}
+
+
 table.mini.cal.ui
 thead.days
-span.abbr-mid {
-	display: none;
-	
-	
-	
+span.abbr-mid,
+.mini.cal.ui .event.link {
+	display: none;	
 }
 
 .sub
@@ -558,7 +582,16 @@ a:active {
 
 /* MIDDLE MIDDLE MIDDLE content main content */
 
-/* mosaic flow */
+/* MOSAIC FLOW TEXT WILL ACTIVATE IF THE JQUERY PLUG IN IS IN THE DOCUMENT */
+
+
+
+
+
+
+
+
+
 .mosaicflow__column {
     float:left;
     }
@@ -573,7 +606,22 @@ a:active {
     z-index: -1;
    
 }
+
+
+
+
+
+
+
+
+
 /* mosaic flow end */
+
+
+
+
+
+
 
 h1.page.heading
  {
@@ -585,8 +633,9 @@ h1.page.heading
 	background-image: url("eventslogo.gif");
 	background-repeat: no-repeat;
 	background-size: auto;
-	height: 250px;
-	width: 300px;
+	margin-top: 250px;
+	height: auto;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -595,73 +644,24 @@ h1.page.heading
 
 
 
-.item.event {
-	
-	padding: 10px;
-	
-}
 .item.event
 .content {
 	
-	background-color: white;
+	background-color: transparent;
 	width: 300px;
 	z-index: -1;
 	position: relative;
 	font-family: helvetica;
 	border: 1px solid rgba(190,190,190,0.66);
-	padding: 5px;
-	
-	
-}
-
-.item.event
-.content
-ul
-li,
-p {
 	padding: 10px;
+	
+	
 }
 
 .items.events.ui {
 	width: 630px;
 	background-color: transparent;
 }
-
-.items.events.ui
-img {
-	
-	
-	position: relative;
-	
-}
-
-
-.masthead
-.utility.menus
-a:link {
-   
-}
-
-/* visited link */
-.masthead
-a:visited {
-    color: #00FF00;
-}
-
-/* mouse over link */
-.masthead
-.utility.menus
-a:hover {
-    color: #FF00FF;
-}
-
-/* selected link */
-.masthead
-.utility.menus
-a:active {
-    color: #0000FF;
-}															
-	
 
 .item.event,
 .content {
@@ -681,34 +681,12 @@ a:active {
 /* unvisited link */
 .main
 a:link {
- color: #ff005f;
  text-decoration: none;
  font-family: "Helvetica";
- letter-spacing: 2px;
    
 }
 
-/* visited link */
-.main
-a:visited {
-    color: #00FF00;
-}
 
-/* mouse over link */
-.main
-a:hover {
-    color: #FF00FF;
-}
-
-/* selected link */
-.main
-a:active {
-    color: #0000FF;
-}															
-	
-/* MIDDLE CONTENT END */
-																			
-/* FORM SEARCH BAR FINISH*/
 
 
 
@@ -728,7 +706,7 @@ footer.footer {
 	background-color: rgba(61,61,61,0.5);
 	position: fixed;
 	width: 100%;
-	height: 6%;
+	height: 30px;
 	left: 0;
 	bottom: 0;
 	padding-left: 50px;
@@ -834,23 +812,11 @@ p.legal {
 
 
 
-
-
-
-.layout.profile.detail
-.shim {
-	
-	/* background-color: pink; */
-	margin-top: 250px;
-	
-	
-}
-
 header 
 a.mark {
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("profileslogo.png");
+	/* background-image: url("profileslogo.png"); */
 	position: absolute;
 	margin-top: 55px;
 	margin-left: 50%;
