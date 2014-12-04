@@ -28,7 +28,35 @@ body {
 		
 }
 
+/* STYLING LINKS */
 
+ /* unvisited link */
+.body
+a:link {
+    color: #ee2c7d;
+}
+
+/* visited link */
+.body
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+.body
+a:hover {
+    background-color: yellow;
+}
+
+/* selected link */
+.body
+a:active {
+    color: #EE2A7B;
+}
+
+
+
+/* Styling Links */
 
 .shim {
 	
@@ -44,13 +72,14 @@ img {
 	
 	max-width: 500px;
 	padding-top: 20px;
+	padding-bottom: 10px;
 	
 }
 
 .shim
 img:hover {
 	
-	opacity: .5;
+
 	
 }
 	
@@ -104,7 +133,10 @@ h3 {
 }
 
 
-nav.utility.menus
+/* Tablet-ish Media Query */
+
+
+	nav.utility.menus
 ul.menu {
 	
 	background-color: rgba(255,255,255,1);
@@ -323,8 +355,8 @@ ul.menu
 	text-align: center;
 	
 	position: fixed;
-	top: 15px;
-	left: 925px;
+	top: 10px;
+	left: 985px;
 	
 	
 	z-index: 9999;
@@ -350,17 +382,18 @@ li {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-size: 12px;
+	
 
 	
 	
-	background: pink;
+	background: rgba(255,255,255,0.25);
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
 	
 	
 	padding: 5px;
-	padding-left: 5px;
+	padding-left: 10px;
 	text-transform: uppercase;
 	z-index: -1;
 	font-size: 16px;
@@ -370,6 +403,82 @@ li {
 	
 }
 
+/* NAV ICONS */
+
+
+
+
+nav.social.menus
+ul.menu
+li:nth-child(1) {
+	
+	background-image: url("twitter.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+nav.social.menus
+ul.menu
+li {
+	
+	background-color: #EE2A7B;
+	border-radius: 20px;
+	padding: 15px;
+    margin: 3px;
+	border: 2px solid #EE2A7B;
+}
+
+nav.social.menus
+ul.menu
+li:nth-child(2) {
+	
+	background-image: url("tumblr.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+nav.social.menus
+ul.menu
+li:nth-child(3) {
+	
+	background-image: url("vimeo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+
+nav.social.menus
+ul.menu
+li:nth-child(4) {
+	
+	background-image: url("behance.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+nav.social.menus
+ul.menu
+li:nth-child(5) {
+	
+	background-image: url("flickr.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+nav.social.menus
+ul.menu
+li
+a {
+	height: 25px;
+	width: 25px;
+	color: rgba(255,255,255,0);
+	
+}
 
 
 
@@ -425,28 +534,24 @@ form.form {
 
 
 
-
-
-nav.utility.menus 
-form.form,
-input#masthead-search,
-button.control {
-	 
-	
-		
-	
-	}
 	
 	
-form.form,
+form.form
+.action
 button.control
+ 
  {
 	display: inline-block;
-	color: gray;
 	text-transform: uppercase;
 	padding-top: 1px;
-	
-}
+    color: #FFF;
+    letter-spacing: 1px;
+    -moz-appearance: none;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #ee2c7d;
+} 
+
 
 
 /* bottom content that was moved to the RIght side */
@@ -460,7 +565,7 @@ button.control
 	
 	
 	height: 100%;
-	width: 180px;
+	width: 280px;
 	position: static;
 	display: block;
 	top: 0;
@@ -478,14 +583,25 @@ button.control
 
 input#mce-EMAIL.required.email {
 	
-	background-color: pink;
+	background-color: white;
 	width: 150px;
 	border: 2px solid gray;
 	margin-bottom: 5px;
 	border-radius: 0px;
 }
 
-
+input#mc-embedded-subscribe.button {
+	background: #EE2A7B;
+	color: white;
+	letter-spacing: 1px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 20px;
+	padding: 5px 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	
+}
 
 
 .sub
@@ -512,7 +628,7 @@ h2 {
 .sub
 .calendar.segment {
 	width: 120px;
-	background-color: pink;
+	border: none;
 	
 	
 
@@ -522,7 +638,8 @@ h2 {
 .calendar.segment,
 table.mini.cal.ui {
 	
-	background-color: maroon;
+	background-color: white;
+	border: 2px solid gray;
 	position: static;
 	bottom: 0;
 	z-index: 100;
@@ -538,6 +655,22 @@ table.mini.cal.ui {
 .mini.cal.ui .link.day {
 	display: block;
 }
+
+.sub
+table.mini.cal.ui
+caption {
+	
+	color: #ee2c7d;
+	font-weight: bold;
+}
+
+.sub
+.table.mini.cal.ui
+td, th {
+	
+	padding: 3px;
+}
+
 
 /*
 .mini.cal.ui .link.day:hover + .event.link {
@@ -726,6 +859,7 @@ h1.page.heading
 .main
 a:link {
  text-decoration: none;
+ color: #EE2A7B
 
    
 }
@@ -753,10 +887,10 @@ a:link {
 
 footer.footer {
 	
-	background-color: rgba(61,61,61,0.5);
+	background-color: transparent;
 	position: fixed;
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	left: 0;
 	bottom: 0;
 	padding-left: 50px;
@@ -777,7 +911,8 @@ ul
 li {
 	
 	padding: 5px;
-	
+	color: #EE2A7B;
+    font-weight: bold;
 	
 }
 
@@ -785,10 +920,21 @@ nav.departments.menus /* MICA LOGO GOES HERE */
 ul
 li:first-child {
 	
-	/* background-color: pink; */
-	
+	background-color: transparent;
+	background-image: url("mica-logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+
 }
 
+nav.departments.menus /* MICA LOGO GOES HERE */
+ul
+li
+a:first-child {
+	
+
+
+}
 
 
 
@@ -803,8 +949,8 @@ li:first-child {
 /* unvisited link */
 nav.departments.menus
 a:link {
-   color: white;
-}
+   color: #EE2A7B;
+   }
 
 /* visited link */
 nav.departments.menus
@@ -816,6 +962,8 @@ a:visited {
 nav.departments.menus
 a:hover {
     color: #ff0070;
+    font-style: oblique;
+    background-color: rgba(158,158,158,0.51)
 }
 
 /* selected link */
@@ -824,6 +972,14 @@ a:active {
     color: #0000FF;
 }	
 
+nav.departments.menus /* MICA LOGO GOES HERE */
+ul
+li
+a:first-child {
+	
+	color:  rgba(255,255,255,0);
+
+}
 
 
 
@@ -838,7 +994,11 @@ p.legal {
 	margin-top: 0;
 	right: 0;
 	position: absolute;
+	display: none;
 }
+
+
+
 
 
 
@@ -848,7 +1008,78 @@ p.legal {
 
 
 
+@media (max-width: 640px) {
+	
+	.shim {
+		
+		background: pink;
+		
+	}
+	
+	nav.utility.menus ul.menu {
+		
+		height: auto;
+		
+		
+	}
+	
+	nav.utility.menus ul.menu li {
+		
+		display: block;
+		border-bottom: 1px solid gray;
+		padding: 5px;
+		
+	}
+	
+	
+	
+nav
+ul.menu.level-1, {
+	
 
+	text-align: center;
+	background-color: green;
+	
+	
+	
+}
+
+.sub {
+
+
+	padding: 20px;
+	color: gray;
+	background-color: pink;
+	
+	
+	height: auto;
+	width: 280px;
+	position: static;
+	display: block;
+	
+	
+	
+	right: 5px;
+	overflow: hidden;
+	text-align: center;
+	z-index: 15;
+	
+	margin-left: 50%;
+	margin-right: 50%;
+	
+	bottom: 0;
+		
+}
+
+
+
+
+
+
+
+
+	
+}/* end media query */
 
 
 
@@ -862,76 +1093,4 @@ p.legal {
 
 
 
-
-header 
-a.mark {
-	background-size: contain;
-	background-repeat: no-repeat;
-    background-image: url("profileslogo.png");
-    background-color: transparent;
-	position: absolute;
-	margin-top: -55px;
-	margin-left: 300px;
-	height: 150px;
-	width: 250px;
-	z-index: 9999;
-	
-	
-	
-}
-
-
-
-
-
-
-/*
-PROFILE PAGE GENERAL STYLING PROFILE PAGE GENERAL STYLING PROFILE PAGE GENERAL STYLING PROFILE PAGE GENERAL STYLING 
-
-*/
-
-
-/*LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE*/
-
-
-
-.main 
-a:link {
-	
-	color: #EE2A7B;
-	
-}
-
-/*LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE LINKS FOR PROFILE PAGE*/
-
-
-
-
-																	
-																			
-																			
-
-@media screen and (min-width: 640) {
-	
-	.masthead {
-		overflow: hidden;
-	}
-	 
-	.masthead .brand {
-		float: left;
-		width: 30;
-		
-	}
-	
-	.masthead .utility {
-		float: right;
-		width: 20%;
-	}
-	
-}
-
-.l-home .masthead {
-	
-	border-bottom: 20px solid lime;
-}
 

@@ -1,0 +1,538 @@
+* {
+	
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #ff0070; /* ruby */
+}
+
+/* visited link */
+a:visited {
+    color: #ff0070; /* medium ruby */
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+a:active {
+    color: #ff0070;
+}
+
+html {
+	
+	/* background-image: url('gdlogobg.gif'); */
+	background-repeat: repeat;
+	background-size: auto;
+	background-color: white;
+	min-width: 480px;
+}
+
+header {
+	
+	font-family: "otama.ep","didot",serif;
+	text-align: left;
+	background-color: white;
+	padding-left: 40px;
+	height: 100%;
+	width: 200px;
+	left: 0;
+	top: 0;
+	background-color: white;
+	z-index: 9999;
+	position: absolute;
+	overflow: visible;
+	}
+
+header
+.brand
+a {
+	
+	background-color: transparent;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: -2px;
+	top: 0;
+	border-bottom: 4px solid #ff0070;
+	display: inline-block;
+	width: 170px;
+}
+
+
+header
+a:link {
+    color: #ff0070;
+}
+
+/* visited link */
+header
+a:visited {
+    color:  #ff0070; 
+}
+
+/* mouse over link */
+header
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+header
+a:active {
+    color:   #E0115F;
+}
+
+
+
+header
+ul {
+	
+	padding-left: 0;
+	margin: 0;
+	font-family: helvetica;
+}
+
+header 
+li {
+	
+	line-height: 2em;
+	font-size: 12px;
+	
+	
+	
+}
+
+header
+form {
+	
+	
+		font-family: helvetica;
+	
+}
+
+header
+input {
+	
+	width: 150px;
+	color: gray;
+	padding: 2px;
+	
+}
+
+header
+form,
+button {
+	
+	border-radius: 0px;
+	background-color: white;
+	color: grey;
+	border:none;
+	margin: 5px;
+	margin-left: 0;
+	display: inline;
+	
+}
+
+
+
+.page {
+	
+	background-color: white;
+	height: 100%;
+	z-index: -1;
+	
+	
+}
+
+main
+h1 {
+	font-family: "otama.ep","didot",serif;
+	color: #ff0070;
+	width: 250px;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: -2px;
+}
+
+main
+h2 {
+	
+	font-family: "otama.ep";
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 250px;
+	font-weight: bold;
+	line-height: 1em;
+	letter-spacing: -2px;
+	padding-top: 10px;
+	border-bottom: 2px solid #ff0070;
+	
+	
+}
+main
+p {
+	
+	color: #424242;
+	
+}	
+
+main
+img {
+	
+	padding-bottom: 20px;
+	
+}
+
+
+
+.sub {
+	
+	padding-top: 20px;
+	font-size: 12px;
+	height: 40%;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	padding-left: 124px;
+	position: relative;
+	overflow: visible;
+	border-top: 4px solid #ff0070;
+	margin-top: 20px;
+	font-family: helvetica;
+}
+
+
+.sub
+h2 {
+	
+	color: #404040;
+	border: 0;
+	font-family: "helvetica";
+	letter-spacing: .02em;
+}	
+
+
+footer {
+	
+	text-align: center;
+	background-color: white;
+
+}
+
+
+footer 
+nav
+ul {
+	
+	padding: 0;
+	margin: 0;
+	
+}
+footer
+nav
+ul
+li {
+	
+	display: inline-block;
+	padding: 10px;
+	
+}
+/* CALENDAR STYLES START */
+
+.sub
+.calendar.segment {
+	
+	
+	overflow: hidden;
+	height: auto;
+
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	text-transform: uppercase;
+	
+
+}
+
+
+.sub
+.calendar.segment
+.abbr-short,
+.abbr-mid,
+.event.link {
+	
+	display: none;
+
+	
+}
+
+
+.sub
+.calendar.segment
+.days
+th {
+	
+	padding: 2px;
+}
+
+.sub
+.calendar.segment
+.week
+.date {
+	
+	padding: 5px;
+}
+
+
+.sub
+.formats.menus.segment 
+.menu	
+
+{
+	
+	overflow: hidden;
+	height: auto;
+	text-align: left;
+	
+
+}
+
+
+.sub
+.subscribe.segment
+
+{
+
+	
+	
+	height: 100%;
+	padding: 0;
+
+
+}
+
+.sub
+.subscribe.segment
+h2 {
+	
+	color: gray;
+	
+}
+
+.sub
+.tags.menus.segment {
+	
+	
+	overflow: hidden;
+	height: 100%;
+	
+	
+}
+
+.sub
+.tags.menus.segment
+ul
+ {
+	
+	
+	padding-left: 0;
+
+	
+}
+
+
+
+.sub
+.archives.segment {
+	
+	overflow: hidden;
+	height: 100%;
+	
+	padding: 0;
+	
+}
+
+/* SUB LINKS */
+
+.sub
+a:link {
+    color:  #E0115F;
+}
+
+/* visited link */
+.sub
+a:visited {
+    color: #E0115F; 
+}
+
+/* mouse over link */
+.sub
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+.sub
+a:active {
+    color: #E0115F ;
+}
+
+header
+.social.menus
+li {
+	
+background-color: #ff0070;
+height: 30px;
+width: 30px;
+border-radius: 15px;
+display: inline-block;
+	
+}
+
+
+/* SUB END */
+
+	
+/* CALENDAR STYLES END */
+
+/* mosaic flow */
+
+.mosaicflow__column {
+    float:left;
+    }
+.mosaicflow__item {
+	position:relative;
+	padding: 5px;
+	}    
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:600px;
+    z-index: -1;
+   
+}
+/* mosaic flow end */
+
+
+@media only screen and (min-width: 959px) {
+
+/* SUB STYLING CALENDAR, LIST, SUBSCRIBE, INTERESTS */
+
+
+
+
+
+} /* min640 Media Query End */
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+/* SUB STYLING CALENDAR, LIST, SUBSCRIBE, INTERESTS */
+
+.sub
+.formats.menus.segment
+ul
+ {
+	padding-left: 0;
+	text-align: left;
+	
+	
+}
+.sub
+.subscribe.segment
+
+{
+
+	
+	
+	height: 100%;
+	padding: 0;
+	overflow: visible;
+}
+.sub
+.subscribe.segment
+h2 {
+	
+	width: 150px;
+}
+
+	
+/* mosaic flow */
+
+.mosaicflow__column {
+    float:left;
+    }
+.mosaicflow__item {
+	position:relative;
+	padding: 20px;
+	}    
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:300px;
+    z-index: -1;
+   
+}
+
+} /* tablet media query ends */
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+
+main {
+	
+	min-width: 480px;
+	
+}
+
+
+
+header {
+background-color: white;
+width: 100%;
+position: relative;
+}
+
+.sub {
+
+display: none;	
+}
+
+main {
+
+}
+
+/* mosaic flow */
+
+.mosaicflow__column {
+    float:left;
+    }
+.mosaicflow__item {
+	position:relative;
+	}    
+.mosaicflow__item img {
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:300px;
+    z-index: -1;
+   
+}
+/* mosaic flow end */
+
+	
+	
+	
+} /* Smartphone media query ends */
