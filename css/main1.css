@@ -48,8 +48,15 @@ header {
 	background-color: white;
 	z-index: 9999;
 	position: absolute;
-	overflow: visible;
+	overflow: hidden;
+	
 	}
+header
+.brand {
+	
+	overflow: hidden;
+	
+}	
 
 header
 .brand
@@ -64,6 +71,7 @@ a {
 	border-bottom: 4px solid #ff0070;
 	display: inline-block;
 	width: 170px;
+	overflow: hidden;
 }
 
 
@@ -316,8 +324,21 @@ th {
 	
 	height: 100%;
 	padding: 0;
+	
 
 
+}
+
+.sub
+.subscribe.segment
+#mc_embed_signup_scroll
+
+
+{
+	
+	overflow-x: hidden;
+
+	
 }
 
 .sub
@@ -395,6 +416,7 @@ height: 30px;
 width: 30px;
 border-radius: 15px;
 display: inline-block;
+overflow: hidden;
 	
 }
 
