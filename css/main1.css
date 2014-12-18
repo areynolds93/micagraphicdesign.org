@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style-type: none;
+	
 }
 
 
@@ -71,8 +72,12 @@ a {
 	border-bottom: 4px solid #ff0070;
 	display: inline-block;
 	width: 170px;
+<<<<<<< HEAD
 	padding-left: 0px;
 	overflow: visible;
+=======
+	overflow: hidden;
+>>>>>>> FETCH_HEAD
 }
 
 
@@ -169,6 +174,7 @@ h1 {
 	font-weight: bold;
 	line-height: 1em;
 	letter-spacing: -2px;
+	
 }
 
 main
@@ -183,7 +189,7 @@ h2 {
 	letter-spacing: -2px;
 	padding-top: 10px;
 	border-bottom: 2px solid #ff0070;
-	
+	overflow: hidden;
 	
 }
 main
@@ -198,8 +204,14 @@ img {
 	
 	padding-bottom: 20px;
 	
+	
 }
-
+main
+.attach {
+	
+	overflow: hidden;
+	
+}
 
 
 .sub {
@@ -442,7 +454,10 @@ border-radius: 5px;
     display:block;
     width:100%;
     height:auto;
-    max-width:600px;
+    min-height: 400px;
+    min-width:400px;
+    max-height: 500px;
+    max-width: 500px;
     z-index: -1;
    
 }
