@@ -71,8 +71,8 @@ a {
 	border-bottom: 4px solid #ff0070;
 	display: inline-block;
 	width: 170px;
-	padding-left: 10px;
-	overflow: hidden;
+	padding-left: 0px;
+	overflow: visible;
 }
 
 
@@ -412,14 +412,16 @@ header
 .social.menus
 li {
 	
-background-color: #ff0070;
+background-color: transparent;
 height: 30px;
-width: 30px;
-border-radius: 15px;
+width: auto;
 display: inline-block;
-overflow: hidden;
+border-radius: 5px;
 	
 }
+
+
+
 
 
 /* SUB END */
